@@ -1,0 +1,47 @@
+name: New Treble ROM Request
+description: Provide details for a new Treble ROM request.
+title: "[New Treble ROM]: "
+labels: ["enhancement", "treble"]
+assignees: []
+
+body:
+  - type: dropdown
+    id: architecture
+    attributes:
+      label: Architecture
+      description: Specify the architecture.
+      options:
+        - ARM
+        - ARM64
+        - x86
+        - x86_64
+      validations:
+        required: true
+
+  - type: input
+    id: rom_source
+    attributes:
+      label: ROM Source
+      description: Provide the source URL or repository for the ROM.
+      placeholder: e.g., https://github.com/example/rom
+      validations:
+        required: true
+
+  - type: textarea
+    id: patches
+    attributes:
+      label: Patches
+      description: List any patches or modifications needed.
+      placeholder: Describe the patches or modifications.
+      validations:
+        required: false
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: Additional Information
+      description: Any other relevant information.
+      placeholder: Provide any additional details here.
+      validations:
+        required: false
+        
