@@ -15,8 +15,7 @@ body:
         - ARM64
         - x86
         - x86_64
-      validations:
-        required: true
+      required: true
 
   - type: input
     id: rom_source
@@ -24,17 +23,26 @@ body:
       label: ROM Source
       description: Provide the source URL or repository for the ROM.
       placeholder: e.g., https://github.com/example/rom
-      validations:
-        required: true
+      required: true
 
-  - type: textarea
-    id: patches
+  - type: input
+    id: patches_src
     attributes:
-      label: Patches
-      description: List any patches or modifications needed.
-      placeholder: Describe the patches or modifications.
-      validations:
-        required: false
+      label: Patches Source
+      description: Provide the source URL or repository for the patches.
+      placeholder: e.g., https://github.com/example/patches
+      required: true
+
+  - type: dropdown
+    id: rom_type
+    attributes:
+      label: ROM Type
+      description: Select the type of ROM.
+      options:
+        - Custom ROM
+        - GSI (Generic System Image)
+        - AOSP (Android Open Source Project)
+      required: true
 
   - type: textarea
     id: additional_info
@@ -42,6 +50,5 @@ body:
       label: Additional Information
       description: Any other relevant information.
       placeholder: Provide any additional details here.
-      validations:
-        required: false
-        
+      required: false
+
