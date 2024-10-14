@@ -22,7 +22,7 @@ body:
       label: ROM Source
       description: Provide the source URL or repository for the ROM.
       placeholder: e.g., https://github.com/example/rom
-s
+
   - type: input
     id: patches_src
     attributes:
