@@ -15,7 +15,6 @@ body:
         - ARM64
         - x86
         - x86_64
-      
 
   - type: input
     id: rom_source
@@ -23,31 +22,17 @@ body:
       label: ROM Source
       description: Provide the source URL or repository for the ROM.
       placeholder: e.g., https://github.com/example/rom
-      
-
+s
   - type: input
     id: patches_src
     attributes:
       label: Patches Source
       description: Provide the source URL or repository for the patches.
       placeholder: e.g., https://github.com/example/patches
-      
-
-  - type: dropdown
-    id: rom_type
-    attributes:
-      label: ROM Type
-      description: Select the type of ROM.
-      options:
-        - Custom ROM
-        - GSI (Generic System Image)
-        - AOSP (Android Open Source Project)
 
   - type: textarea
     id: additional_info
     attributes:
       label: Additional Information
-      description: Any other relevant information. Note: DO NOT PUT ANYTHING IN HERE UNLESS IT IS DEVICE CRUTIAL INFORMATION. THE PROCESS WILL TAKE VERY LONG IF THIS FEILD IS NOT LEFT BLANK.
+      description: Any other relevant information. Note: DO NOT PUT ANYTHING IN HERE UNLESS IT IS DEVICE CRUCIAL INFORMATION. THE PROCESS WILL TAKE VERY LONG IF THIS FIELD IS NOT LEFT BLANK.
       placeholder: Provide any additional details here.
-      
-
