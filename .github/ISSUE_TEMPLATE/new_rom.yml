@@ -34,5 +34,6 @@ body:
     id: additional_info
     attributes:
       label: Additional Information
-      description: Any other relevant information. Note: DO NOT PUT ANYTHING IN HERE UNLESS IT IS DEVICE CRUCIAL INFORMATION. THE PROCESS WILL TAKE VERY LONG IF THIS FIELD IS NOT LEFT BLANK.
+      description: >-
+        Any other relevant information. Note: DO NOT PUT ANYTHING IN HERE UNLESS IT IS DEVICE CRUCIAL INFORMATION. THE PROCESS WILL TAKE VERY LONG IF THIS FIELD IS NOT LEFT BLANK.
       placeholder: Provide any additional details here.
