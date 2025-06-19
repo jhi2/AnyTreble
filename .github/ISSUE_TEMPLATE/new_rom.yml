@@ -1,4 +1,4 @@
-\name: Treble GSI Config Request
+name: Treble GSI Config Request
 description: Request or document a Treble GSI build configuration.
 title: "[Treble GSI Config] <short description>"
 labels: ["gsi", "build-config"]
@@ -7,7 +7,7 @@ body:
     id: source_url
     attributes:
       label: Source URL
-      description: "The repo or manifest URL for the ROM source (e.g., https://github.com/LineageOS/android.git)"
+      description: The repo or manifest URL for the ROM source (e.g., https://github.com/LineageOS/android.git)
       placeholder: "https://github.com/LineageOS/android.git"
     validations:
       required: true
@@ -15,7 +15,7 @@ body:
     id: branch
     attributes:
       label: Branch
-      description: "The branch or manifest branch to use (e.g., lineage-21.0, master, etc.)"
+      description: The branch or manifest branch to use (e.g., lineage-21.0, master, etc.)
       placeholder: "lineage-21.0"
     validations:
       required: true
@@ -23,7 +23,7 @@ body:
     id: lunch_target
     attributes:
       label: Lunch Target
-      description: "The lunch target for the build (e.g., aosp_arm64_ab-userdebug)"
+      description: The lunch target for the build (e.g., aosp_arm64_ab-userdebug)
       placeholder: "aosp_arm64_ab-userdebug"
     validations:
       required: true
@@ -31,7 +31,7 @@ body:
     id: patches_source
     attributes:
       label: Patches Source (optional)
-      description: "Optional. A URL to a repo containing patches to apply, or leave blank if not needed."
+      description: Optional. A URL to a repo containing patches to apply, or leave blank if not needed.
       placeholder: "https://github.com/example/patches.git"
     validations:
-      required: false
+      required: falsevvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
