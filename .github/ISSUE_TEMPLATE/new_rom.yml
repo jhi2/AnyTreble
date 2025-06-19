@@ -1,39 +1,37 @@
-name: New Treble ROM Request
-description: Provide details for a new Treble ROM request.
-title: "[New Treble ROM]: "
-labels: ["enhancement", "treble"]
-assignees: []
-
+\name: Treble GSI Config Request
+description: Request or document a Treble GSI build configuration.
+title: "[Treble GSI Config] <short description>"
+labels: ["gsi", "build-config"]
 body:
-  - type: dropdown
-    id: architecture
-    attributes:
-      label: Architecture
-      description: Specify the architecture.
-      options:
-        - ARM
-        - ARM64
-        - x86
-        - x86_64
-
   - type: input
-    id: rom_source
+    id: source_url
     attributes:
-      label: ROM Source
-      description: Provide the source URL or repository for the ROM.
-      placeholder: e.g., https://github.com/example/rom
-
+      label: Source URL
+      description: "The repo or manifest URL for the ROM source (e.g., https://github.com/LineageOS/android.git)"
+      placeholder: "https://github.com/LineageOS/android.git"
+    validations:
+      required: true
   - type: input
-    id: patches_src
+    id: branch
     attributes:
-      label: Patches Source
-      description: Provide the source URL or repository for the patches.
-      placeholder: e.g., https://github.com/example/patches
-
-  - type: textarea
-    id: additional_info
+      label: Branch
+      description: "The branch or manifest branch to use (e.g., lineage-21.0, master, etc.)"
+      placeholder: "lineage-21.0"
+    validations:
+      required: true
+  - type: input
+    id: lunch_target
     attributes:
-      label: Additional Information
-      description: >-
-        **⚠️ WARNING: DO NOT PUT ANYTHING IN HERE UNLESS IT IS DEVICE CRUCIAL INFORMATION. THE PROCESS WILL TAKE VERY LONG IF THIS FIELD IS NOT LEFT BLANK.**
-      placeholder: Provide any additional details here.
+      label: Lunch Target
+      description: "The lunch target for the build (e.g., aosp_arm64_ab-userdebug)"
+      placeholder: "aosp_arm64_ab-userdebug"
+    validations:
+      required: true
+  - type: input
+    id: patches_source
+    attributes:
+      label: Patches Source (optional)
+      description: "Optional. A URL to a repo containing patches to apply, or leave blank if not needed."
+      placeholder: "https://github.com/example/patches.git"
+    validations:
+      required: false
